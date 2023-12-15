@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/moment@latest/moment.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="todolist">
+        <div class="tdl_img">
+            <img src="https://www.sanxuatsotay.com.vn/wp-content/uploads/2017/06/To_Do_List.jpg" style="width: 100%"
+                alt="">
+        </div>
+        <div class="tdl_content">
+            <div class="tdl_input">
+                <h1>Your To Do List</h1>
+                <p id="show_date" style="margin-bottom: 10px;"></p>
+                <div class="search">
+                    <input id="input_needtodo" type="text" placeholder="Nhập việc cần làm...">
+                    <span class="button_add" id="btn_add"><i class="fa-solid fa-plus"></i></span>
+                </div>
+                <div id="thongbao" style="margin-top: 5px; font-size: 14px; color: red; display: none;"></div>
+            </div>
+            <div class="tdl_result">
+                <ul class="list_need todo" id="need_to_do">
+                    <!-- <li class="show_thongbao" id="tb_todolist"
+                        style="border: none; display: flex; align-items: center;justify-content: center;">
+                        <span id="tbneedtodo" style="font-weight: bolder;">List trống</span>
+                    </li>
+                    <li style="list-style: none;">
+                        <span>Chơi game</span>
+                        <span id="nothingtodo"></span>
+                        <div class="buttons">
+                            <span id="remove"><i class="fa-solid fa-trash-can remove_icon"></i></span>
+                            <span id="completed"><i class="fa-regular fa-circle-check"></i></span>
+                        </div>
+                    </li> -->
+
+                </ul>
+
+                <ul class="list_completed todo" id="completedlist">
+                    <!-- <li class="show_thongbao" id="tb_completed"
+                        style="border: none; display: flex; align-items: center;justify-content: center;">
+                        <span id="tbcompleted" style="font-weight: bolder;">List trống</span>
+                    </li>
+                    <li style="list-style: none;">
+                        <span>Chơi game</span>
+                        <span id="nothingtodo"></span>
+                        <div class="buttons">
+                            <span id="remove"><i class="fa-solid fa-trash-can remove_icon"></i></span>
+                            <span id="completed"><i class="fa-regular fa-circle-check"></i></span>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- javascript -->
+    <script src="https://kit.fontawesome.com/e85274f24a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@latest/moment.min.js"></script>
+    <script src="validation.js"></script>
+    <script src="taskList.js"></script>
+    <script src="getTime.js"></script>
+    <script src="thongBao.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

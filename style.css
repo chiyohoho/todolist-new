@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+#todolist {
+    margin: 100px auto;
+    width: 450px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#todolist .tdl_content {
+    position: relative;
+    padding: 15px 20px;
+}
+
+#todolist .tdl_input {
+    height: fit-content;
+}
+
+#todolist .tdl_input h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+#todolist .tdl_input .search {
+    position: relative;
+}
+
+#todolist .tdl_input .search input {
+    margin-top: 5px;
+    padding: 10px 15px;
+    width: 95%;
+
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+#todolist .tdl_input .search input:focus {
+    border: 2px solid #de3963;
+    border-radius: 5px;
+}
+
+#todolist .tdl_input .search input:hover {
+    border: 2px solid #de3963;
+    border-radius: 5px;
+}
+
+#todolist .tdl_input .search .button_add {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    font-size: 20px;
+    color: #de3963;
+    background: white;
+    border: 3px solid #de3963;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+#todolist .tdl_result {
+    padding: 10px 20px;
+    min-height: 200px;
+}
+
+#todolist .tdl_result .list_need {
+    position: relative;
+}
+
+#todolist .tdl_result .todo {
+    min-height: 80px;
+}
+
+#todolist .tdl_result .todo li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    margin-bottom: 5px;
+    transition: all 0.2s linear;
+}
+
+#todolist .tdl_result .todo li:hover {
+    border: 1px solid #302e2e;
+    transition: all 0.2s linear;
+    cursor: default;
+}
+
+#todolist .tdl_result .todo li .buttons #remove {
+    transition: all 0.1s linear;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#todolist .tdl_result .todo li .buttons #remove:hover {
+    color: #de3963;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+
+#todolist .tdl_result .todo li .buttons #btncompleted {
+    transition: all 0.1s linear;
+    cursor: default;
+}
+
+#todolist .tdl_result .todo li .buttons #btncompleted:hover {
+    transition: all 0.1s linear;
+    color: #2cdfc1;
+    cursor: pointer;
+}
+
+#todolist .tdl_result .todo li .buttons #removecompleted {
+    transition: all 0.1s linear;
+    margin-right: 5px;
+    color: #da7a92;
+}
+
+#todolist .tdl_result .todo li .buttons #removecompleted:hover {
+    color: #de3963;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+
+#todolist .tdl_result .todo li .buttons #btncompletedlist {
+    transition: all 0.1s linear;
+    cursor: default;
+    color: #538b82;
+}
+
+#todolist .tdl_result .todo li .buttons #btncompletedlist:hover {
+    transition: all 0.1s linear;
+    color: #18f7d1;
+    cursor: pointer;
+}
+
+#todolist .tdl_result .list_completed {
+    position: relative;
+    padding: 30px 0;
+}
+
+#todolist .tdl_result .list_completed::after {
+    content: '';
+    width: 150px;
+    height: 1px;
+    background: #ccc;
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#todolist .tdl_result .list_completed::before {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+}
